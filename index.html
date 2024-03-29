@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+   <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.pn" alt="Resume Builder Logo">
+                <!-- <h3>SELECTED.COM</h4> -->
+                   
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#">Templates</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="adminLog.php">Admin</a></li>
+                    <li><a href="logReg.php">Sign Up/Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Other sections of your website go here -->
+
+    <section class="hero">
+        <div class="container">
+          
+                <h1 class="hero-title">Build Your Perfect Resume</h1>
+                <p class="hero-subtitle">Create a professional resume that stands out</p>
+            
+            <a href="logReg.php" class="btn btn-primary">Get Started</a>
+        </div>
+    </section>
+    
+
+    <section class="features" id="features">
+        <div class="container">          
+            <div class="feature">
+                <i class="fas fa-check-circle"></i>
+                <h2 class="feature-title">Professional Templates</h2>
+                <p class="feature-description">Choose from a variety of professionally designed templates.</p>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-pencil-alt"></i>
+                <h2 class="feature-title">Easy to Use</h2>
+                <p class="feature-description">Intuitive interface makes creating your resume a breeze.</p>
+            </div>
+
+            <div class="feature">
+                
+                <i class="fas fa-download"></i>
+                <h2 class="feature-title">Easy to Download</h2>
+                <p class="feature-description">Just one click to download your resume.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="templates">
+        <div class="container">
+            <div class="template-slider">
+                <img src="images/template1.jpg" alt="Template 1" class="slide">
+                <img src="images/template2.jpg" alt="Template 2" class="slide">
+                <img src="images/template3.jpg" alt="Template 3" class="slide">
+            </div>
+            <div class="template-description">
+                <h2 class="template-title">Professional</h2>
+                <p class="template-info">Select this template for a professional look.</p>
+                <button class="btn btn-secondary">Select</button>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide() {
+        slides.forEach(slide => {
+            slide.style.display = 'none';
+        });
+
+        slides[currentSlide].style.display = 'block';
+
+        currentSlide++;
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        }
+
+        setTimeout(showSlide, 5000); // Change image every 5 seconds
+    }
+
+    showSlide();
+});
+
+        </script>
+    </section>
+
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonial">
+                <img src="images/Man1.jpg" alt="User 1" class="avatar">
+                <p class="quote">"This service helped me create a stunning resume in no time. Highly recommended!"</p>
+                <p class="author">John Doe</p>
+            </div>
+            <div class="testimonial">
+                <img src="images/Man2.jpg" alt="User 2" class="avatar">
+                <p class="quote">"I've received so many compliments on my new resume. Thanks for the great templates!"</p>
+                <p class="author">Jane Smith</p>
+            </div>
+            <div class="testimonial">
+                <img src="images/Man3.jpg" alt="User 3" class="avatar">
+                <p class="quote">"The resume builder was easy to use and helped me land my dream job. Thank you!"</p>
+                <p class="author">Alex Johnson</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer class="footer" id="about">
+        <div class="container">
+            <div class="footer-content">
+                <h3 class="footer-title">Contact Us</h3>
+                <p class="footer-info">DITMS College, Chh. Sambhaji Nagar, Maharashtra, India</p>
+                <p class="footer-info">gawaianurag4@gmail.com</p>
+                <p class="footer-info">+91-9156141802</p>
+            </div>
+            <div class="footer-content">
+                <h3 class="footer-title">Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="https://github.com/AnuragGawai"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/anurag-gawai-89a691262"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/marvel_anurag/"><i class="fab fa-instagram"></i></a></li>
+                    <!-- Add more social icons here -->
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

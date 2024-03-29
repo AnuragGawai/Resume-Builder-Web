@@ -1,0 +1,312 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark background */
+    color: #fff; /* Text color */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333; /* Darker container background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #ff6f00; /* Accent color */
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #ff6f00; /* Accent color */
+    border-bottom: 1px solid #ff6f00; /* Accent color */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    color: #fff; /* Text color */
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #666; /* Darker border */
+    border-radius: 5px;
+    background-color: #444; /* Darker background */
+    color: #fff; /* Text color */
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6f00; /* Accent color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #ff8f33; /* Darker accent color on hover */
+}
+
+/* Add more CSS for styling other sections */
+.profile-summary textarea {
+    width: 97.5%;
+    padding: 10px;
+    /* margin-right: 20px; */
+    font-size: 16px;
+    border: 1px solid #666; /* Darker border */
+    border-radius: 5px;
+    background-color: #444; /* Darker background */
+    color: #fff; /* Text color */
+    resize: none; /* Disable textarea resizing */
+}
+
+.profile-summary textarea::placeholder {
+    color: #ccc; /* Placeholder text color */
+}
+
+.skills {
+    margin-bottom: 30px;
+}
+
+.skill-input {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.skill-input input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #666; /* Darker border */
+    border-radius: 5px;
+    background-color: #444; /* Darker background */
+    color: #fff; /* Text color */
+}
+
+.skill-input button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: #ff6f00; /* Accent color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.skill-input button:hover {
+    background-color: #ff8f33; /* Darker accent color on hover */
+}
+#work-experience-container, #education-container,#languages-container ,#projects-container, #volunteer-experience-container{
+    
+padding-right: 20px;
+}
+
+ .delete-education-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6f00; /* Accent color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ .delete-education-btn:hover{
+    background-color: #ff8f33; /* Darker accent color on hover */
+}
+.delete-experience-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6f00; /* Accent color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete-experience-btn:hover{
+    background-color: #ff8f33; /* Darker accent color on hover */
+}
+/* Existing CSS styles */
+
+.certifications {
+    margin-bottom: 30px;
+}
+
+.certification-entry {
+    margin-bottom: 20px;
+}
+
+.certification-header input[type="text"] {
+    width: calc(33.33% - 10px);
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: 1px solid #666; /* Darker border */
+    border-radius: 5px;
+    background-color: #444; /* Darker background */
+    color: #fff; /* Text color */
+}
+
+.certification-header button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6f00; /* Accent color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.certification-header button:hover {
+    background-color: #ff8f33; /* Darker accent color on hover */
+}
+
+/* Existing CSS styles */
+
+/* Existing CSS styles */
+
+.projects {
+    margin-bottom: 30px;
+}
+
+.project-entry {
+    margin-bottom: 20px;
+}
+
+.project-header input[type="text"],
+.project-header textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #666; /* Darker border */
+    border-radius: 5px;
+    background-color: #444; /* Darker background */
+    color: #fff; /* Text color */
+}
+
+.project-header button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6f00; /* Accent color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project-header button:hover {
+    background-color: #ff8f33; /* Darker accent color on hover */
+}
+
+.project-header textarea {
+    height: 100px; /* Adjust height of the textarea */
+}
+
+/* Existing CSS styles */
+
+/* Existing CSS styles */
+
+
+
+/* Existing CSS styles */
+/* Existing CSS styles */
+
+.languages {
+    margin-bottom: 30px;
+}
+
+.language-entry {
+    margin-bottom: 20px;
+}
+
+.language-header input[type="text"],
+.language-header select {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: 1px solid #666; /* Darker border */
+    border-radius: 5px;
+    background-color: #444; /* Darker background */
+    color: #fff; /* Text color */
+}
+
+.language-header button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6f00; /* Accent color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.language-header button:hover {
+    background-color: #ff8f33; /* Darker accent color on hover */
+}
+
+/* Existing CSS styles */
+/* Existing CSS styles */
+
+.interests-hobbies {
+    margin-bottom: 30px;
+}
+
+.interest-hobby-entry {
+    margin-bottom: 20px;
+}
+
+.interest-hobby-header textarea {
+    width: calc(100% - 130px);
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: 1px solid #666; /* Darker border */
+    border-radius: 5px;
+    background-color: #444; /* Darker background */
+    color: #fff; /* Text color */
+}
+
+.interest-hobby-header button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6f00; /* Accent color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.interest-hobby-header button:hover {
+    background-color: #ff8f33; /* Darker accent color on hover */
+}
+
+/* Existing CSS styles */
